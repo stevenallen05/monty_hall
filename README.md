@@ -15,7 +15,7 @@ The answer is unintuitive. You always switch. You double your chances of switchi
 
 ### Alternate solution
 
-Pick Door #2 and enjoy a happy life with your new pet goat
+[Pick Door #2 and enjoy a happy life with your new pet goat](https://www.xkcd.com/1282/)
 
 ## Programatic proof
 
