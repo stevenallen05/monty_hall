@@ -1,9 +1,8 @@
 require "ruby-progressbar"
 require "byebug"
-INTERVAL = 1_0_000
+INTERVAL = 1_000_000
 
 at_exit do
-
   # Strategy: always stay
   wins = play_game { |_revealed_goat, picked_door| picked_door }
   print_record(wins)
@@ -16,7 +15,6 @@ end
 def print_record(wins)
   puts "Record: #{(wins.to_f * 100)/ INTERVAL}% (#{wins}/#{INTERVAL})"
 end
-
 
 def reveal_goat(picked_door)
   @doors.each_with_index.map { |k, v| k == "goat" && picked_door != v ? v : nil }.compact.shuffle.first
